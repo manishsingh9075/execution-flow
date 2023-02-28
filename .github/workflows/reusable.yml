@@ -7,15 +7,15 @@ on:
         required: false
         default: dist
         type: string
-    secrets:
-      some-secret:
-        required: false
+    #secrets:
+      #some-secret:
+        #required: false
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get code  
-        uses: action/download-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: ${{ inputs.artifact-name }}
       - name: List files
