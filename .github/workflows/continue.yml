@@ -2,7 +2,7 @@ name:  continuous Website Deployment
 on:
   push:
     branches:
-      - main
+      - dev
 jobs:
   lint:
     runs-on: ubuntu-latest
